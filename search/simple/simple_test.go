@@ -1,6 +1,16 @@
 package simple
 
-import "testing"
+import (
+	"github.com/zasuchilas/grokking/search/utils/listutil"
+	"testing"
+)
+
+func BenchmarkSearch(b *testing.B) {
+	list := listutil.MakeOrderedIntList(1_000_000)
+	for i := 0; i < b.N; i++ {
+		_, _ = Search(list, 5000)
+	}
+}
 
 func TestSearch(t *testing.T) {
 	type args struct {
