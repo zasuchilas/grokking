@@ -1,8 +1,8 @@
-package main
+package binary
 
 import "errors"
 
-func BinarySearch(list []int, item int) (int, error) {
+func Search(list []int, item int) (int, error) {
 	low := 0
 	high := len(list) - 1
 

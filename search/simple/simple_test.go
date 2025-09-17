@@ -1,8 +1,8 @@
-package main
+package simple
 
 import "testing"
 
-func TestSimpleSearch(t *testing.T) {
+func TestSearch(t *testing.T) {
 	type args struct {
 		list []int
 		item int
@@ -25,13 +25,13 @@ func TestSimpleSearch(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got, err := SimpleSearch(tt.args.list, tt.args.item)
+			got, err := Search(tt.args.list, tt.args.item)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("SimpleSearch() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("Search() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if got != tt.want {
-				t.Errorf("SimpleSearch() got = %v, want %v", got, tt.want)
+				t.Errorf("Search() got = %v, want %v", got, tt.want)
 			}
 		})
 	}
