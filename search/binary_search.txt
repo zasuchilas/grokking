@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: github.com/zasuchilas/grokking/search/binary
+cpu: 13th Gen Intel(R) Core(TM) i7-1360P
+BenchmarkSearch-16    	11565079	        98.93 ns/op
+BenchmarkSearch-16    	11891251	        98.79 ns/op
+BenchmarkSearch-16    	12177666	        98.65 ns/op
+BenchmarkSearch-16    	12151310	        98.71 ns/op
+BenchmarkSearch-16    	12160275	        98.86 ns/op
+BenchmarkSearch-16    	12157053	        98.72 ns/op
+BenchmarkSearch-16    	12214740	        98.56 ns/op
+BenchmarkSearch-16    	12174574	        98.64 ns/op
+BenchmarkSearch-16    	12132991	        98.51 ns/op
+BenchmarkSearch-16    	12153157	        98.33 ns/op
+PASS
+ok  	github.com/zasuchilas/grokking/search/binary	12.951s

@@ -1,14 +1,15 @@
 package simple
 
 import (
-	"github.com/zasuchilas/grokking/search/utils/listutil"
+	"github.com/zasuchilas/grokking/utils/benchutil"
 	"testing"
 )
 
 func BenchmarkSearch(b *testing.B) {
-	list := listutil.MakeOrderedIntList(1_000_000)
 	for i := 0; i < b.N; i++ {
-		_, _ = Search(list, 5000)
+		for _, item := range benchutil.Items {
+			_, _ = Search(benchutil.List, item)
+		}
 	}
 }
 
