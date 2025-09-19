@@ -17,6 +17,13 @@ func TestSort(t *testing.T) {
 		{
 			name: "success",
 			args: args{
+				arr: []int{10, 5, 2, 3},
+			},
+			want: []int{2, 3, 5, 10},
+		},
+		{
+			name: "success",
+			args: args{
 				arr: []int{5, 3, 1, 7, 9},
 			},
 			want: []int{1, 3, 5, 7, 9},

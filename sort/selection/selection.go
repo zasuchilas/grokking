@@ -1,5 +1,6 @@
 package selection
 
+// Sort sorts the items using a selection sort - O(n * n).
 func Sort(arr []int) []int {
 	newArr := make([]int, len(arr))
 	for i := range arr {
